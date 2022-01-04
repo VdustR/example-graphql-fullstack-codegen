@@ -1,0 +1,17 @@
+schema: schema.graphql
+generates:
+  packages/query/index.ts:
+    documents: query.graphql
+    config:
+      strictScalars: true
+      scalars:
+        DateTime: string
+      fetcher: "./fetch#fetch"
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+  packages/type-resolver/index.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers

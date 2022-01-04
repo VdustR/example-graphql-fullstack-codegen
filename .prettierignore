@@ -1,0 +1,5 @@
+node_modules
+
+/packages/app/dist
+/packages/query/index.ts
+/packages/type-resolver/index.ts

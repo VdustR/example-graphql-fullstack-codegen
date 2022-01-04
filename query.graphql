@@ -1,0 +1,13 @@
+mutation BookTrips($launchIds: [ID]!) {
+  bookTrips(launchIds: $launchIds) {
+    success
+  }
+}
+
+query Launches {
+  launches {
+    id
+    isBooked
+    time
+  }
+}
